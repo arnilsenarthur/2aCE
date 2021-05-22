@@ -126,3 +126,10 @@ for(int i = 0; i < n; i ++)
 auto end  = chrono::steady_clock::now();
 cout <<" Test ended in " << chrono::duration_cast<chrono::microseconds>(end - start).count()/1000.0 << "ms" << endl;
 ```
+
+| Moves | Tests | Average (ms) | Min (ms) | Max (ms)|
+|-------|-------|---------|-----|-----|
+|1      | 10    | 0.038  | 0.03|0.072|
+|100    | 10    | 0.945  |0.845|1.232|
+|500000|10|1258.606|1184.92|1391.27|
+
