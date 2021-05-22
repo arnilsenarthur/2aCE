@@ -1,0 +1,15 @@
+//Create board
+StandardBoard board;
+
+//Input FEN
+std::string input = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq c3 0 1";
+
+//load FEN
+std::string status;
+board.loadBoard(input,status);
+cout << status;
+
+//Output FEN
+std::string result;
+board.stringifyBoard(result);
+cout << "\n" << input << "\n" << result;

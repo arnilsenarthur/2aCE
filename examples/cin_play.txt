@@ -1,0 +1,34 @@
+//Create board
+StandardBoard board;
+
+//Print board
+board.print();
+std::cout << "\n";
+
+//Testing
+while (true)
+{
+    std::cout << "\n";
+    std::cout << (board.currentPlayer == 0 ? "[w]" : "[b]") << " <<< ";
+    std::string move;
+    std::getline(std::cin, move);
+
+    cout << "\n";
+
+    if (move == "exit")
+        break;
+    else
+    {
+        std::string output;
+        Move m = board.parseMove(move, output);
+        if (!m.isValid())
+            std::cout << ">> " << output;
+        else
+        {
+            board.doMove(m);
+            board.print();
+
+            std::cout << "\n";
+        }
+    }     
+}

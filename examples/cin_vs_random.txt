@@ -1,0 +1,60 @@
+//Create board
+StandardBoard board;
+
+//Seed
+srand (time(NULL));
+
+board.print();
+cout << "\nYour Turn:\n";
+
+while(true)
+{
+    #pragma region Player
+    std::cout << (board.currentPlayer == 0 ? "[w]" : "[b]") << " <<< ";
+    std::string move;
+    std::getline(std::cin, move);
+
+    cout << "\n";
+
+    if (move == "exit")
+        break;
+    else
+    {
+        std::string output;
+        Move m = board.parseMove(move, output);
+        if (!m.isValid())
+        {
+            std::cout << ">> " << output;
+            cout << "\nYour Turn:\n";
+            continue;
+        }
+        else
+        {
+            board.doMove(m);
+            board.print();
+
+            std::cout << "\n";
+        }
+    }     
+    #pragma endregion
+
+    #pragma region Computer
+    auto start = chrono::steady_clock::now();  
+    board.genMoves();
+    if(board.legalMoves.size() == 0)
+    {
+        break;
+    }
+    Move mv = board.legalMoves[rand() % board.legalMoves.size()];
+    board.doMove(mv);
+    auto end  = chrono::steady_clock::now();  
+
+    std::string output = "";
+    board.stringifyMove(mv,output);
+
+    board.print();
+    
+    cout <<" \nComputer played in " << chrono::duration_cast<chrono::microseconds>(end - start).count()/1000.0 << "ms: " << output;
+    cout << ". Your Turn:\n";
+    #pragma endregion
+}

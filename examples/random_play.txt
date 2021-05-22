@@ -1,0 +1,30 @@
+//Create board
+StandardBoard board;
+
+//Seed
+srand (time(NULL));
+std::stringstream ss;
+auto start  = chrono::steady_clock::now();
+
+//Do 100 random moves
+for(int i = 0; i < 100; i ++)
+{
+    board.genMoves();
+
+    if(board.legalMoves.size() == 0)
+    {
+        break;
+    }
+
+    Move mv = board.legalMoves[rand() % board.legalMoves.size()];
+    board.doMove(mv);
+    std::string output = "";
+    board.stringifyMove(mv,output);
+    ss << output << " ";
+}
+
+//Finalize, print elapsed time and moves    
+auto end  = chrono::steady_clock::now();
+cout << "\n" << ss.str() << "\n\n";
+cout <<" Test ended in " << chrono::duration_cast<chrono::microseconds>(end - start).count()/1000.0 << "ms" << endl;
+board.print();
