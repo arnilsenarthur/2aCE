@@ -49,7 +49,7 @@ if(mv.isValid())
     board.print();
 }
 else
-	//Print what is wrong
+    //Print what is wrong
     cout << status;
 ````
 
