@@ -1,6 +1,8 @@
 
-<h1 align="center">2aCE</h1>
-<h3 align="center">Árnilsen's Adaptable Chess Engine</h3>
+<p align="center">
+	<img src="docs/img/icon.png" width="140">
+</p>
+<h3 align="center">2aCE - Árnilsen's Adaptable Chess Engine</h3>
 <p align="center">
 	<img src="https://badgen.net/badge/license/GNU/red">
 	<img src="https://badgen.net/badge/version/1.0.0/blue">
