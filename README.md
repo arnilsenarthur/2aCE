@@ -1,6 +1,7 @@
-<center>
+
 # 2aCE
 ### Árnilsen's Adaptable Chess Engine
+<center>
 <img src="https://badgen.net/badge/license/GNU/red">
 <img src="https://badgen.net/badge/Version/1.0.0/blue">
 <img src="https://badgen.net/badge/Language/C++/pink">
