@@ -1,6 +1,12 @@
+<center>
 # 2aCE
-
 ### Árnilsen's Adaptable Chess Engine
+<img src="https://badgen.net/badge/license/GNU/red">
+<img src="https://badgen.net/badge/Version/1.0.0/blue">
+<img src="https://badgen.net/badge/Language/C++/pink">
+<img src="https://badgen.net/badge/Status/Not-stable yet/yellow">
+</center>
+
 
 
 2aCE is a chess engine in development, created for standard and custom chess game modes. Created by **Árnilsen Arthur** in 2021, using bitboard method in C++
