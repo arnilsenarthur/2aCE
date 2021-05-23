@@ -3,9 +3,9 @@
 <h3 align="center">Árnilsen's Adaptable Chess Engine</h3>
 <p align="center">
 	<img src="https://badgen.net/badge/license/GNU/red">
-	<img src="https://badgen.net/badge/Version/1.0.0/blue">
-	<img src="https://badgen.net/badge/Language/C++/pink">
-	<img src="https://badgen.net/badge/Status/Not-stable yet/yellow">
+	<img src="https://badgen.net/badge/version/1.0.0/blue">
+	<img src="https://badgen.net/badge/language/C++/pink">
+	<img src="https://badgen.net/badge/status/not-stable yet/yellow">
 </p>
 
 
