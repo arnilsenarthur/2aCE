@@ -44,8 +44,8 @@ std::string status;
 Move mv = board.parseMove("c4",status);
 if(mv.isValid())
 {
-	//Do Move
-	board.doMove(mv);
+    //Do Move
+    board.doMove(mv);
     board.print();
 }
 else
