@@ -1,12 +1,12 @@
 
-# 2aCE
-### Árnilsen's Adaptable Chess Engine
-<center>
-<img src="https://badgen.net/badge/license/GNU/red">
-<img src="https://badgen.net/badge/Version/1.0.0/blue">
-<img src="https://badgen.net/badge/Language/C++/pink">
-<img src="https://badgen.net/badge/Status/Not-stable yet/yellow">
-</center>
+<h1 align="center">2aCE</h1>
+<h3 align="center">Árnilsen's Adaptable Chess Engine</h3>
+<p align="center">
+	<img src="https://badgen.net/badge/license/GNU/red">
+	<img src="https://badgen.net/badge/Version/1.0.0/blue">
+	<img src="https://badgen.net/badge/Language/C++/pink">
+	<img src="https://badgen.net/badge/Status/Not-stable yet/yellow">
+</p>
 
 
 
